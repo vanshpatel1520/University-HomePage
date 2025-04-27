@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>University Department Web Page</title>
+        <link
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            rel="stylesheet">
+        <style>
+        body {
+            background: linear-gradient(to right, #f0f0f0, #d9e4f5);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .nav-tabs .nav-link.active {
+            background-color: #343a40;
+            color: #ffc107;
+            border-radius: 5px;
+        }
+        .nav-tabs .nav-link {
+            color: #343a40;
+            font-weight: bold;
+        }
+        h1, h2 {
+            margin-top: 30px;
+            font-weight: bold;
+            color: #212529;
+        }
+        .gallery img, .faculty-img, .research-img, .course-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            margin: 10px 0;
+            border-radius: 15px;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        .gallery img:hover, .faculty-img:hover, .research-img:hover, .course-img:hover {
+            transform: scale(1.05);
+        }
+        .faculty-name, .research-usage, .course-name {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #495057;
+        }
+        .card-header {
+            background-color: #343a40;
+            color: #ffc107;
+        }
+        .btn-link {
+            color: #ffc107;
+            font-weight: bold;
+        }
+        .btn-link:hover {
+            text-decoration: none;
+            color: #fd7e14;
+        }
+    </style>
+    </head>
+    <body>
+
+        <div class="container mt-5">
+            <h1 class="text-center">University Department</h1>
+
+            <!-- Navigation Tabs -->
+            <ul class="nav nav-tabs mt-4 justify-content-center" id="myTab"
+                role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="faculty-tab"
+                        data-toggle="tab" href="#faculty" role="tab"
+                        aria-controls="faculty" aria-selected="true">Faculty</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="research-tab" data-toggle="tab"
+                        href="#research" role="tab" aria-controls="research"
+                        aria-selected="false">Research</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="courses-tab" data-toggle="tab"
+                        href="#courses" role="tab" aria-controls="courses"
+                        aria-selected="false">Courses</a>
+                </li>
+            </ul>
+
+            <!-- Tab Contents -->
+            <div class="tab-content" id="myTabContent">
+
+                <!-- Faculty Tab -->
+                <div class="tab-pane fade show active" id="faculty"
+                    role="tabpanel" aria-labelledby="faculty-tab">
+                    <h2 class="text-center">Faculty Members</h2>
+                    <p class="text-center">Meet our experienced faculty with
+                        expertise in various fields of study.</p>
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            <img src="./_images/Faculty/Female_Teacher2.jpg"
+                                class="faculty-img" alt="Female Teacher">
+                            <div class="faculty-name">Prof. Sarah Johnson</div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./_images/Faculty/Male__teacher2.jpg"
+                                class="faculty-img" alt="Male Teacher 1">
+                            <div class="faculty-name">Prof. Michael Smith</div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./_images/Faculty/Male_teacher3.avif"
+                                class="faculty-img" alt="Male Teacher 2">
+                            <div class="faculty-name">Prof. David Williams</div>
+                        </div>
+                    </div>
+                    <h3 class="text-center mt-4">Campus Views</h3>
+                    <div class="row gallery">
+                        <div class="col-md-4">
+                            <img src="./_images/Image Gallery/Campus3.jpg"
+                                alt="Campus 1">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./_images/Image Gallery/Campus4.jpg"
+                                alt="Campus 2">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./_images/Image Gallery/Campus5.jpg"
+                                alt="Campus 3">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Research Tab -->
+                <div class="tab-pane fade" id="research" role="tabpanel"
+                    aria-labelledby="research-tab">
+                    <h2 class="text-center">Research Areas</h2>
+                    <p class="text-center">Our department focuses on
+                        cutting-edge research in AI, Biology, and
+                        Engineering Innovations.</p>
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            <img src="./_images/Research/AI_labs.jpg"
+                                class="research-img" alt="Research Lab 1">
+                            <div class="research-usage">AI Research Lab</div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./_images/Research/Lab2.jpg"
+                                class="research-img" alt="Research Lab 2">
+                            <div class="research-usage">Biology Lab</div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./_images/Research/robotics.webp"
+                                class="research-img" alt="Research Lab 3">
+                            <div class="research-usage">Robotics & IoT Lab</div>
+                        </div>
+                    </div>
+                    <h3 class="text-center mt-4">Campus Views</h3>
+                    <div class="row gallery">
+                        <div class="col-md-4">
+                            <img src="./_images/Image Gallery/Classroom.jpg"
+                                alt="Campus 4">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./_images/Image Gallery/Classroom2.jpg"
+                                alt="Campus 5">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./_images/Image Gallery/Library.jpg"
+                                alt="Campus 6">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Courses Tab -->
+                <div class="tab-pane fade" id="courses" role="tabpanel"
+                    aria-labelledby="courses-tab">
+                    <h2 class="text-center">Course Details</h2>
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            <img src="./_images/Course/Pharmacy.jpg"
+                                class="course-img" alt="Pharmacy">
+                            <div class="course-name">Pharmacy</div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./_images/Course/Machine_learning.jpg"
+                                class="course-img" alt="Machine_learning">
+                            <div class="course-name">Machine Learning</div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./_images/Course/Ai.jpg"
+                                class="course-img"
+                                alt="Artificial Intelligence">
+                            <div class="course-name">Artificial
+                                Intelligence</div>
+                        </div>
+                    </div>
+                    <h3 class="text-center mt-4">Campus Views</h3>
+                    <div class="row gallery">
+                        <div class="col-md-4">
+                            <img src="./_images/Image Gallery/Auditorium.jpg"
+                                alt="Campus 7">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./_images/Image Gallery/Campu2.jpg"
+                                alt="Campus 8">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./_images/Image Gallery/Campus.jpg"
+                                alt="Campus 9">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+$(document).ready(function(){
+    $('.tab-pane').hide();
+    $('.tab-pane.active').show();
+    
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+        var target = $(e.target).attr("href");
+        $('.tab-pane').hide();
+        $(target).fadeIn(600);
+    });
+});
+</script>
+
+    </body>
+</html>
